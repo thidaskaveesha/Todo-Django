@@ -51,6 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'todoList.urls'
+STATIC_ROOT = '/mainApp/static/'
 
 TEMPLATES = [
     {
