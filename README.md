@@ -39,6 +39,16 @@ Once the environment is set up, you can start using the Todo-Django application.
 python manage.py runserver
 ```
 
+## Migrate data models 
+
+Once you change any datamodels or data it's better to migrate to do that you can simply add these two commands 
+```bash
+python manage.py makemigrations
+```
+```bash
+python manage.py migrate
+```
+
 This will start the development server. You can then access the Todo-Django application through your web browser at http://localhost:8000/.
 
 ## Features
