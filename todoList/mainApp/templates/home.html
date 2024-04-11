@@ -1,13 +1,19 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %} Home - Todo List {% endblock %}
 
+
 {% block content %}
+<img class="positionedTop" src="{% static 'src/stars.png' %}" alt="stars">
 <div class="homeContainer">
-    <div class="row">
-        <div class="col-md-5">
-            <h1>Home</h1>
-            <p>Welcome to the home page!</p>
-        </div>
+
+    <div class="HeadingTexts">
+        <h1>Welcome to the Todo List App</h1>
+        <p>Here you can create your own todo list and manage your tasks, organize tasks, set deadlines, prioritize,
+            track progress, and manage time efficiently for productivity.</p>
+        <a href="Todos"><button class="btn btn-success">Get Started</button></a>
     </div>
+    <img src="{% static 'src/homeImage.png' %}" alt="Todo List Image">
 </div>
+<img class="positionedBottom" src="{% static 'src/stars.png' %}" alt="stars">
 {% endblock %}

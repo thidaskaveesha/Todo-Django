@@ -1,13 +1,14 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %} About - Todo List {% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-5">
-            <h1>About</h1>
-            <p>Welcome to the about page!</p>
-        </div>
-    </div>
+<div class="aboutContainer">
+    <h1>About Us</h1>
+    <p>
+        At Mozo Technology, we're Mozo Developers dedicated to creating intuitive apps and platforms that simplify tasks
+        for individuals and businesses. Leveraging advanced tech and industry know-how, we enhance productivity and
+        revolutionize user interactions. <a href="https://thidas.epizy.com/" target="_blank">More details.</a></p>
+    <img src="{% static 'src/MOZO_dev.png' %}" width="350px" height="280px" alt="Todo List">
 </div>
 {% endblock %}
