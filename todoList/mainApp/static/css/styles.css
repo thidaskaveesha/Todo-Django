@@ -7,10 +7,12 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 .HeadingTexts h1 {
+    margin-left: 20px;
     color: white;
     font-size: 2rem;
     font-weight: bold;
@@ -19,6 +21,7 @@
 
 .HeadingTexts p {
     color: white;
+    margin-left: 20px;
     font-size: 1rem;
     width: 500px;
     text-align: left;
