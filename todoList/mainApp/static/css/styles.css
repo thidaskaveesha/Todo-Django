@@ -80,3 +80,100 @@
     text-decoration: none;
     font-size: 19px;
 }
+
+/* TODOs */
+.todosContainer {
+    min-height: 100vh;
+}
+
+.todosContainer>h1 {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.todosContainer>p {
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    margin: 5px auto;
+}
+
+.todos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.todoItem {
+    width: 350px;
+    height: 450px;
+    border: 1px solid #ccc;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+    width: 100%;
+    background-color: #ccc;
+}
+
+.heading h3 {
+    font-size: 1.5rem;
+}
+
+.todoItem p {
+    font-size: 1rem;
+    padding: 10px;
+    color: black;
+}
+
+.todoItem .btn {
+    position: absolute;
+    bottom: 0;
+    margin-left: 150px;
+}
+
+.addItemContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.addItemContainer.show {
+    display: block;
+}
+
+#addItemBtn {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#addItemForm {
+    position: relative;
+}
+
+.addItemContainer input,
+.addItemContainer textarea,
+.addItemContainer button {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    margin-left: 1px;
+}
